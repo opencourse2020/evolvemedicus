@@ -67,7 +67,7 @@ INSTALLED_APPS = [
     "guardian",
     "django_extensions",
     "import_export",
-    # "evolvemedicus.profiles.apps.ProfilesConfig",
+    "evolvemedicus.profiles.apps.ProfilesConfig",
     "evolvemedicus.core.apps.CoreConfig",
 
 ]
