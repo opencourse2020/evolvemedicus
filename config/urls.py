@@ -6,7 +6,7 @@ from django.urls import include, path
 from django.conf.urls import url
 from django.views.generic import RedirectView
 from django.views.i18n import JavaScriptCatalog
-from hifuji.profiles.views import ProfileView
+# from evolvemedicus.profiles.views import ProfileView
 
 admin.autodiscover()
 
@@ -15,7 +15,7 @@ urlpatterns = [
     # path("accounts/", include("allauth.urls")),
     # path("accounts/profile/", ProfileView.as_view()),
     # path("profiles/", include("hifuji.profiles.urls", namespace="profiles")),
-    # path("core/", include("hifuji.core.urls", namespace="core")),
+    path("core/", include("evolvemedicus.core.urls", namespace="core")),
     path("", RedirectView.as_view(pattern_name="core:dashboard")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

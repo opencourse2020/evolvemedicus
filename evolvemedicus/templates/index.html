@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -13,14 +15,14 @@ https://wordpress.org/plugins/coming2live/
 		<meta name="format-detection" content="telephone=no">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<!-- Fonts-->
-		<link rel="stylesheet" type="text/css" href="assets/fonts/fontawesome/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href={% static "assets/fonts/fontawesome/font-awesome.min.css" %}>
 		<!-- Vendors-->
-		<link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/grid.css">
-		<link rel="stylesheet" type="text/css" href="assets/vendors/YTPlayer/css/jquery.mb.YTPlayer.min.css">
-		<link rel="stylesheet" type="text/css" href="assets/vendors/vegas/vegas.min.css">
+		<link rel="stylesheet" type="text/css" href={% static "assets/vendors/bootstrap/grid.css" %}>
+		<link rel="stylesheet" type="text/css" href={% static "assets/vendors/YTPlayer/css/jquery.mb.YTPlayer.min.css" %}>
+		<link rel="stylesheet" type="text/css" href={% static "assets/vendors/vegas/vegas.min.css" %}>
 		<!-- App & fonts-->
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Work+Sans:300,400,500,700">
-		<link rel="stylesheet" type="text/css" id="app-stylesheet" href="assets/css/main.css"><!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" id="app-stylesheet" href={% static "assets/css/main.css"%}><!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<![endif]-->
 	</head>
@@ -35,7 +37,7 @@ https://wordpress.org/plugins/coming2live/
 					
 					<!-- header -->
 					<div class="header">
-						<div class="header__left"><span>90 Queen St Melbourne Vic. AU</span><span>+1-202-555-0192</span><span>info@awe7.com</span>
+						<div class="header__left"><span>Houston, Texas USA</span><span>+1-000-000-0000</span><span>info@evolvemedicus.com</span>
 						</div>
 						<div class="header__social">
 							
@@ -65,15 +67,15 @@ https://wordpress.org/plugins/coming2live/
 						<div class="hero__wrapper">
 							<div class="row">
 								<div class="col-lg-10 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-1 ">
-									<div class="hero__title_inner"><span class="hero__icon">b</span>
+									<div class="hero__title_inner"><span class="hero__icon">e</span>
 										<h1 class="hero__title">We Are Almost Ready for Launch</h1>
-										<p class="hero__text">Perfect and awesome template to present your future product or service.<br>Hooking audience attention is all in the opener.</p>
+										<p class="hero__text">A Revolutionary Product That Will Change The World<br>Saving Lives Is Our Business</p>
 									</div>
 								</div>
 							</div>
 							
 							<!-- countdown__module hide undefined -->
-							<div class="countdown__module hide" data-date="2021/3/21">
+							<div class="countdown__module hide" data-date="2023/1/1">
 								<p><span>%D</span> Days</p>
 								<p><span>%H</span> Hours</p>
 								<p><span>%M</span> Minutes</p>
@@ -84,10 +86,10 @@ https://wordpress.org/plugins/coming2live/
 								
 								<!-- service -->
 								<div class="service">
-									<h2 class="service__title">Web Development</h2>
-									<p class="service__text">Curabitur elementum urna augue, eu porta purus gravida in. Cras consectetur, lor</p>
+									<h2 class="service__title">              </h2>
+									<p class="service__text">                                                 </p>
 								</div><!-- End / service -->
-								
+
 								
 								<!-- service -->
 								<div class="service">
@@ -98,10 +100,10 @@ https://wordpress.org/plugins/coming2live/
 								
 								<!-- service -->
 								<div class="service">
-									<h2 class="service__title">Cloud Security</h2>
-									<p class="service__text">Duis porttitor libero ac egestas euismod. Maecenas quis felis turpis. Nulla quis</p>
+									<h2 class="service__title"></h2>
+									<p class="service__text"></p>
 								</div><!-- End / service -->
-								
+
 							</div>
 						</div>
 					</div>
@@ -111,15 +113,15 @@ https://wordpress.org/plugins/coming2live/
 			<!-- End / Content-->
 		</div>
 		<!-- Vendors-->
-		<script type="text/javascript" src="assets/vendors/jquery/jquery.min.js"></script>
-		<script type="text/javascript" src="assets/vendors/jquery.countdown/jquery.countdown.min.js"></script>
-		<script type="text/javascript" src="assets/vendors/flat-surface-shader/fss.min.js"></script>
-		<script type="text/javascript" src="assets/vendors/particles.js/particles.js"></script>
-		<script type="text/javascript" src="assets/vendors/waterpipe/waterpipe.js"></script>
-		<script type="text/javascript" src="assets/vendors/quietflow/quietflow.min.js"></script>
-		<script type="text/javascript" src="assets/vendors/YTPlayer/jquery.mb.YTPlayer.min.js"></script>
-		<script type="text/javascript" src="assets/vendors/vegas/vegas.min.js"></script>
+		<script type="text/javascript" src={% static "assets/vendors/jquery/jquery.min.js" %}></script>
+		<script type="text/javascript" src={% static "assets/vendors/jquery.countdown/jquery.countdown.min.js" %}></script>
+		<script type="text/javascript" src={% static "assets/vendors/flat-surface-shader/fss.min.js" %}></script>
+		<script type="text/javascript" src={% static "assets/vendors/particles.js/particles.js" %}></script>
+		<script type="text/javascript" src={% static "assets/vendors/waterpipe/waterpipe.js" %}></script>
+		<script type="text/javascript" src={% static "assets/vendors/quietflow/quietflow.min.js" %}></script>
+		<script type="text/javascript" src={% static "assets/vendors/YTPlayer/jquery.mb.YTPlayer.min.js" %}></script>
+		<script type="text/javascript" src={% static "assets/vendors/vegas/vegas.min.js" %}></script>
 		<!-- App-->
-		<script type="text/javascript" src="assets/js/main.js"></script>
+		<script type="text/javascript" src={% static "assets/js/main.js" %}></script>
 	</body>
 </html>
