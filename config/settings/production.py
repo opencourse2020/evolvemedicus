@@ -12,7 +12,7 @@ ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS")
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django_tenants.postgresql_backend',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': env.str("DATABASE_NAME"),
         'USER': env.str("DATABASE_USER_SNAME"),
         'PASSWORD': env.str("DATABASE_PASS_WORD"),
